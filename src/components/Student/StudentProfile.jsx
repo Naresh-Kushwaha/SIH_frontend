@@ -6,7 +6,7 @@ import './StudentProfile.css';
   export default function StudentProfile() {
 
     const navigation = [
-      { name: 'Dashboard', href: '/facultyProfile', current: true },
+      { name: 'Dashboard', href: '/studentprofile', current: true },
    
       { name: 'Feedback', href: '/feedback', current: false },
      
@@ -25,7 +25,7 @@ import './StudentProfile.css';
         <div className="parentcontainer"> 
  <div className="parentcontainer2"> 
         <div className="innerparent">
-        <p className="para" >Hello,Karan</p>
+        <p className="para" >Hello,Student1</p>
         <div className="studentsdetails"><p>Branch</p> <p>Infromation Technology</p></div>
         <div className="studentsdetails"><p>Semester</p><p>3<sup>rd</sup></p></div>
         <div className="studentsdetails">

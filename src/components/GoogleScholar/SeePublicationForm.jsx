@@ -2,6 +2,7 @@
 import axios from 'axios';
 import Header2 from '../Header2';
 import React, { useState, useEffect } from "react";
+import BarChartSingle from '../Chart/BarChartSingle';
 
 const SeePublication = () => {
  
@@ -19,6 +20,7 @@ const SeePublication = () => {
 
 
   ]
+  const ProjctData = [1, 5, 3, 2, 1, 2, 3];
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -37,11 +39,20 @@ const SeePublication = () => {
   }, []);
   return(
     <div>
+      
       <div><Header2 navigation={navigation}></Header2></div>
  <div className="flex  justify-center w-full bg-gray-100">
       <div className="bg-white shadow-lg rounded-lg p-6  ">
-     
-     <ul className='py-8 '>
+      <div  >
+        <h1 className='p-6 font-bold underline'> Publication Data</h1>
+      <div className='flex flex-row justify-center'>
+      
+      <div className='pl-10 flex items-center '>Publication</div>
+      
+<BarChartSingle data={ProjctData} > </BarChartSingle>
+</div>
+      </div>
+     <ul className='py-8 lg:mx-32 '>
       {
         dataArray.map((data,index)=>(
           <li key={index} className='bg-[#d6d0d0] border rounded-md p-12 my-6 px-14'>

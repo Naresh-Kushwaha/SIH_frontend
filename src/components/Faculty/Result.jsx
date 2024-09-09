@@ -34,7 +34,7 @@ const ResultData= () => {
 
   return (
     <div className="p-4">
-      <h1 className="text-xl font-bold mb-4">Dynamic Table with Add/Delete Row</h1>
+      <h1 className="text-xl font-bold mb-4">Performance of the Result</h1>
 
       {/* Table */}
       <table className="min-w-full table-auto border-collapse border border-gray-200">

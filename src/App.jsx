@@ -22,8 +22,14 @@ import Lectures from './components/Faculty/Lectures';
 import Feedback from './components/Student/Feedback';
 import UniversityCalendar from './components/pages/UniversityCalender';
 import StudentPerformance from './components/Faculty/StudentPerformance';
-import { Result } from 'postcss';
+
 import ResultData from './components/Faculty/Result';
+import EventControler from './components/Admin/EventControler';
+import ConnectMeeting from './components/Faculty/ConnectMeeting';
+import GeneratMeeting from './components/Admin/GenerateMeeting';
+import AdminDashboard from './components/Admin/CreateStudent';
+
+
 
 
 function App() {
@@ -75,6 +81,12 @@ function App() {
             <Route path="/calender" element={<UniversityCalendar></UniversityCalendar>} />
             <Route path="/studentperformance" element={<StudentPerformance></StudentPerformance>} />
             <Route path="/result" element={<ResultData></ResultData>} />
+            <Route path="/eventcontroler" element={<EventControler></EventControler>} />
+            <Route path="/adminprofile" element={<AdminProfile></AdminProfile>} />
+            <Route path="/connectmeeting" element={<ConnectMeeting></ConnectMeeting>} />
+            <Route path="/generatemeeting" element={<GeneratMeeting></GeneratMeeting>} />
+            <Route path="/admindashbord" element={<AdminDashboard></AdminDashboard>} />
+
       </Routes>
       
   </Router>

@@ -21,7 +21,7 @@ const [responseData, setResponseData] = useState(null);
         { name: 'Lectures', href: '/lectures', current: false },
         { name: 'Student Performance', href: '/studentperformance', current: false },
         { name: 'Result', href: '/result', current: false },
-
+        { name: 'Connect', href: '/connectmeeting', current: false },
       ]
       const Attendence = [29, 13, 90, 44, 48, 38, 43];
 
@@ -95,16 +95,22 @@ const [responseData, setResponseData] = useState(null);
     {button?(
 
       <div className=''>
-<div className=' flex flex-col '> 
+<div className=' flex flex-col text-center font-bold '> 
+  <div>
+    <h1  className='py-6 underline'>Performance of Engaging Lectures/Practical</h1>
   
-    <div className='flex flex-row '>
+    <div className='flex flex-row justify-center '>
       
         <div className='pl-10 flex items-center '>% target Achieved</div>
         
         <div><ChartBar data={data1}></ChartBar></div>
   
   </div>
-  <div className=' flex flex-row text-center'>
+  </div>
+  <div>
+  <h1  className='py-6 underline'>Performance of Attendence of Student</h1>
+
+  <div className=' flex flex-row justify-center '>
     
       
       
@@ -113,18 +119,19 @@ const [responseData, setResponseData] = useState(null);
 <BarChartSingle data={Attendence}></BarChartSingle>
 </div>
   </div>
-  <div className='flex flex-row '>
+  </div>
+  <div>
+  <h1  className='py-6 underline'>Performance of the Result</h1>
+
+
+  <div className='flex flex-row justify-center '>
       
         <div className='pl-10 flex items-center '>Average Result</div>
         
 <BarChartSingle data={CreditData}> </BarChartSingle>
   </div>
-  <div className='flex flex-row '>
-      
-      <div className='pl-10 flex items-center '>Project</div>
-      
-<BarChartSingle data={ProjctData} > </BarChartSingle>
-</div>
+  </div>
+ 
 </div>
   
   

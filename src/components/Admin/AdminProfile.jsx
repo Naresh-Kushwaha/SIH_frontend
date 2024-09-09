@@ -2,10 +2,11 @@
 import Header2 from '../Header2'
 
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
+  { name: 'Home', href: '/adminprofile', current: true },
+  { name: 'Dashbord', href: '/admindashbord', current: false },
+  { name: 'Connect', href: '/generatemeeting', current: false },
+
+  { name: 'Add Event', href: '/eventcontroler', current: false },
 ]
 
 export default function AdminProfile() {
