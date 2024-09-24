@@ -13,8 +13,7 @@ const StudentPerformance = () => {
       col4: '',
       col5: '',
       col6: '',
-      col6: '',
-     
+   
      
     };
     // Add new row to the existing rows

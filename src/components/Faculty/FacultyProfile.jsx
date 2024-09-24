@@ -17,7 +17,7 @@ const [responseData, setResponseData] = useState(null);
     const navigation = [
         { name: 'Dashboard', href: '/facultyProfile', current: true },
      
-        { name: 'Publication', href: '/seepublication', current: false },
+        { name: 'Annual Evaluation', href: '/annualevaluation', current: false },
         { name: 'Lectures', href: '/lectures', current: false },
         { name: 'Student Performance', href: '/studentperformance', current: false },
         { name: 'Result', href: '/result', current: false },

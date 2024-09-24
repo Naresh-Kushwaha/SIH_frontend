@@ -18,7 +18,7 @@ export default function HomePage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="bg-[url('https://wallpaperaccess.com/full/2137313.jpg')] bg-cover  bg-fixed h-screen " >
+    <div className="bg-[url('https://wallpaperaccess.com/full/2137313.jpg')] bg-cover  bg-fixed h-screen" >
 
 <Header navigation={navigation}></Header>
     

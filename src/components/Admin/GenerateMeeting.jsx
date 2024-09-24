@@ -8,7 +8,7 @@ const GenerateMeeting = () => {
 
   // Generate a fake meeting link for demo purposes
   const generateMeeting = () => {
-    const newLink = `https://your-meeting-platform.com/meeting/${Math.floor(Math.random() * 100000)}`;
+    const newLink = `https://your-meeting-platform.com/meeting/${Math.floor(Math.random()*100000)}`;
     setMeetingLink(newLink);
   };
 

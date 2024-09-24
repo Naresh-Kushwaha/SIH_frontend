@@ -28,8 +28,7 @@ import EventControler from './components/Admin/EventControler';
 import ConnectMeeting from './components/Faculty/ConnectMeeting';
 import GeneratMeeting from './components/Admin/GenerateMeeting';
 import AdminDashboard from './components/Admin/CreateStudent';
-
-
+// import Evaluation from './KaranFrontend/EvaluationForm';
 
 
 function App() {
@@ -86,6 +85,8 @@ function App() {
             <Route path="/connectmeeting" element={<ConnectMeeting></ConnectMeeting>} />
             <Route path="/generatemeeting" element={<GeneratMeeting></GeneratMeeting>} />
             <Route path="/admindashbord" element={<AdminDashboard></AdminDashboard>} />
+            {/* <Route path="/annualevaluation" element={<Evaluation></Evaluation>}></Route>
+             */}
 
       </Routes>
       

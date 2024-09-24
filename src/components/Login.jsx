@@ -29,6 +29,8 @@ export default function Login(){
       
 
       const response = await axios.post(`http://localhost:8080/api/${selectedCheckbox}/login`, data);
+      // const response = await axios.post(`https://sih2024-0pz6.onrender.com/${selectedCheckbox}/login`, data);
+
       console.log('Success:', response.data);
 
       login(); 
